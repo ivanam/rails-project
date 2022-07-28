@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <h4>Country info</h4>
+      <dl>
+        <dt>IP:<%= @traceip.ip%> Fecha actual: <%=@traceip.created_at.to_date%></dt>
+        <dt>País:<%= @traceip.country.name %></dt>
+        <dt>Iso Code:<%= @traceip.country.code %></dt>
+        <dt>Idiomas:<%=@traceip.country.get_languages %></dt>
+        <dt>Moneda: <%= @traceip.country.currency.code %>(1 <%=@traceip.country.currency.name%> = <%=@traceip.country.currency.convert%> U$S)</dt>
+        <dt>Distancia:<%= @traceip.distance %> kms (-34, -64) a (40, -4) </dt>
+      </dl>
+    </div>
+  </div>
+</div>

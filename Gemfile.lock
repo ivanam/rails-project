@@ -61,9 +61,15 @@ GEM
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
     ast (2.4.2)
+    autoprefixer-rails (10.4.7.0)
+      execjs (~> 2)
     bindex (0.8.1)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
+    bootstrap (4.3.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     brakeman (5.2.3)
     builder (3.2.4)
     bundle-audit (0.1.0)
@@ -77,7 +83,13 @@ GEM
     crass (1.0.6)
     diff-lcs (1.5.0)
     digest (3.1.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.10.0)
+    excon (0.92.4)
+    execjs (2.8.1)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -131,6 +143,7 @@ GEM
     parser (3.1.2.0)
       ast (~> 2.4.1)
     pg (1.4.1)
+    popper_js (1.16.0)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -257,9 +270,12 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
+  bootstrap (~> 4.3.1)
   brakeman
   bundle-audit
   byebug
+  dotenv-rails
+  excon
   jbuilder (~> 2.11)
   jsbundling-rails
   listen (>= 3.0.5, < 3.8)

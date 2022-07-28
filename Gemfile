@@ -25,6 +25,10 @@ gem 'jbuilder', '~> 2.11'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'excon'
+gem 'bootstrap', '~> 4.3.1'
+gem 'dotenv-rails', groups: [:development, :test]
+
 
 group :development, :test do
   gem 'bundle-audit'
