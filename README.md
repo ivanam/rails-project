@@ -10,7 +10,7 @@ This app demonstrates Rails 6 with PostgreSQL and Webpack (with jsbundling-rails
 ```
 cp .env.example .env
 docker compose build
-docker compose run --rm web bin/rails db:setup
+docker compose run --rm web bin/rails db:setup db:migrate
 ```
 
 ## Running the Rails app
